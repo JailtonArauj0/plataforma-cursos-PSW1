@@ -1,6 +1,6 @@
 <h1> Plataforma de Cursos </h1>
 
-Plataforma de cursos utilizando o framework django, com funções de cadastro, alteração e remoção de cursos, cadastro de usuario e cadastro de administradores pela área administrativa.
+Plataforma de cursos desenvolvida durante a PyStack Week, utilizando o framework django, com funções de cadastro, alteração e remoção de cursos, cadastro de usuario e cadastro de administradores pela área administrativa.
 
 obs.: O cadastro dos cursos é realizado na área administrativa do django.
 <hr>
