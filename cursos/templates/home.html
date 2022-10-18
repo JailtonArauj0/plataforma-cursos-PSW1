@@ -1,0 +1,32 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block 'titulo'%}Home{% endblock%}
+{% block 'head'%} <link rel="stylesheet" href="{% static 'style.css'%}">{% endblock%}
+
+{% block 'body' %}
+<div class="container">
+  <br>
+  <p class="title">Nossos cursos</p>
+  <div class="row">
+
+      {% for i in cursos %}
+
+          <div style="margin-top: 20px;" class="col-md">
+              <div class="card text-center" style="width: 18rem;">
+                  <img class="card-img-top" width="50%" height="200px" src="{{i.thumb.url}}" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">{{i.nome}}</h5>
+                    <p class="card-text">{{i.descricao}}</p>
+                    <a href="{% url 'curso' i.id %}" class="btn btn-primary text-center">Acessar</a>
+                  </div>
+                </div>
+          </div>
+        
+      {% endfor %}
+
+
+  </div>
+
+</div>
+{% endblock %}

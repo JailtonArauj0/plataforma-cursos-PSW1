@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block 'titulo' %}Sobre nós{% endblock %}
+
+{% block 'head' %} <link rel="stylesheet" href="{% static 'style.css'%}">{% endblock %}
+
+{% block 'body' %}
+<div class="abc">
+    <br>
+    <br>
+    <p>A Crown cursos é uma organização sem fins lucrativos criada com o objetivo de disponibilizar gratuitamente cursos de programação a todos.</p>
+    
+    <p class="">Nós buscamos proporcionar conhecimento sobre as diferentes tecnologias usadas no mercado.</p>
+        
+</div>
+
+<div class="contact">
+    <p>Contato</p>
+    <p>Crown.cursos@cursos.org.br | 0800 000 0811</p>
+</div>
+
+{% endblock %}
